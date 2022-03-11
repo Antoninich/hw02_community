@@ -1,6 +1,7 @@
 {% extends 'base.html' %}
 {% block content %}
   <main>
+
     {% for post in posts %}
       <ul>
         <li>
@@ -16,5 +17,6 @@
       {% endif %}
       {% if not forloop.last %}<hr>{% endif %}
     {% endfor %}
+    
   </main>
 {% endblock %}
